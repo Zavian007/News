@@ -3,7 +3,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f4f4f9;
+  background-color: #1a1919;
   color: #333;
 }
 
@@ -15,7 +15,7 @@ nav {
   display: flex;
   justify-content: space-between;
   width: 100%;  /* Ensures it fits the full screen width */
-  background: linear-gradient(90deg, #74ebd5, #acb6e5);
+  background-color: #333;
   padding: 12px 20px;  /* Adjust padding for smaller screens */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   box-sizing: border-box; /* Ensures padding doesn’t affect total width */
@@ -58,6 +58,11 @@ nav ul {
   gap: 16px;
 }
 
+nav h1{
+color: white;
+}
+
+
 .cardContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns */
@@ -71,7 +76,7 @@ nav ul {
 
 .card {
   width: 350px;
-  background-color: #ffffff;
+  background-color: #313131 transparent;
   border-radius: 10px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
   margin-top: 24px;
@@ -103,7 +108,7 @@ nav ul {
   font-weight: bold;
   font-size: 20px;
   margin-top: 8px;
-  color: #333;
+  color: #ffffff;
   padding: 0 16px;
 }
 
@@ -115,7 +120,7 @@ nav ul {
 .card .content {
   padding: 16px;
   font-size: 15px;
-  color: #666;
+  color: #e6e6e6;
 }
 
 .card button {
@@ -163,7 +168,7 @@ nav ul {
   text-align: center;
   font-weight: bold;
   font-size: 32px;
-  color: #333;
+  color: #ffffff;
   margin-top: 20px;
   letter-spacing: 1.2px;
 }

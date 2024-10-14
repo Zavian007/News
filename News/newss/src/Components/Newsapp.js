@@ -36,12 +36,12 @@ const Newsapp = () => {
                 <div>
                     <h1>News</h1>
                 </div>
-                <ul style={{ display: 'flex', gap: '11px', listStyleType: 'none', padding: 0 }}>
+                <ul style={{ display: 'flex', gap: '150px', listStyleType: 'none', padding: 0 }}>
                     <li>
-                        <a href="https://www.bbc.com/news/world" style={{ fontWeight: 600, fontSize: '17px', textDecoration: 'none' }}>All News</a>
+                        <a href="https://www.bbc.com/news/world" style={{ fontWeight: 600, fontSize: '17px', textDecoration: 'none', color: 'white' }}>All News</a>
                     </li>
                     <li>
-                        <a href="https://www.cnn.com/world" style={{ fontWeight: 600, fontSize: '17px', textDecoration: 'none' }}>Trending</a>
+                        <a href="https://www.cnn.com/world" style={{ fontWeight: 600, fontSize: '17px', textDecoration: 'none' ,color: 'white'  }}>Trending</a>
                     </li>
                 </ul>
                 <div className="searchBar">
