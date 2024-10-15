@@ -1,20 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import Card from './Card';
-<<<<<<< HEAD
-=======
 import Footer from './Footer';
-
->>>>>>> 7db0cd4 (Your commit message here)
-
 
 const Newsapp = () => {
     const [search, setSearch] = useState("South Africa");
     const [newsData, setNewsData] = useState(null);
-<<<<<<< HEAD
-    const API_KEY = "bd4761b04cd041fe88022d8dd53ae462";
-=======
-    const API_KEY = "4b1ca42d29044152b12e2dd4be690d85";
->>>>>>> 7db0cd4 (Your commit message here)
+    const API_KEY = "14cdbb53dc264d858130ce7ed29fe7a0"; //News API key 
 
     const getData = async () => {
         try {
@@ -32,20 +23,16 @@ const Newsapp = () => {
 
     useEffect(() => {
         getData();
-<<<<<<< HEAD
-    }, []);
-=======
     }, [getData]);
->>>>>>> 7db0cd4 (Your commit message here)
 
     const handleInput = (e) => {
         setSearch(e.target.value);
     };
 
     return (
-        <div >
+        <div>
             {/* Main Content */}
-            <nav >
+            <nav>
                 <div>
                     <h1>News</h1>
                 </div>
@@ -54,7 +41,7 @@ const Newsapp = () => {
                         <a href="https://www.bbc.com/news/world" style={{ fontWeight: 600, fontSize: '17px', textDecoration: 'none', color: 'white' }}>All News</a>
                     </li>
                     <li>
-                        <a href="https://www.cnn.com/world" style={{ fontWeight: 600, fontSize: '17px', textDecoration: 'none' ,color: 'white'  }}>Trending</a>
+                        <a href="https://www.cnn.com/world" style={{ fontWeight: 600, fontSize: '17px', textDecoration: 'none', color: 'white' }}>Trending</a>
                     </li>
                 </ul>
                 <div className="searchBar">
@@ -73,12 +60,9 @@ const Newsapp = () => {
             <div>
                 {newsData ? <Card data={newsData} /> : <p>No news data available.</p>}
             </div>
-<<<<<<< HEAD
-=======
-            <div><Footer/></div>
->>>>>>> 7db0cd4 (Your commit message here)
+            <div><Footer /></div>
         </div>
     );
 }
-    
+
 export default Newsapp;
