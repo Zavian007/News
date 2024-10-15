@@ -15,7 +15,11 @@ const Card = ({data}) => {
         }else{
             return(
             <div className='card'>
+<<<<<<< HEAD
                 <img src={curItem.urlToImage}/>
+=======
+                <img src={curItem.urlToImage} alt='card'/>
+>>>>>>> 7db0cd4 (Your commit message here)
                 <div className='content'>
                     <a className='title' onClick={()=>window.open(curItem.url)}>{curItem.title}</a>
                     <p>{curItem.description}</p>
